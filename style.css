@@ -118,7 +118,7 @@ header {
 main {
     background-color: #000000;
     width: 100%;
-    height: 1800px;
+    height: 2000px;
     padding-top: 2%;
     padding-left: 11.5%;
     display: flex;
@@ -548,7 +548,7 @@ main {
 
 .experience_item {
     display: flex;
-    
+
     width: 257px;
     height: 76px;
 
@@ -623,4 +623,110 @@ main {
     font-size: 11px;
     font-weight: 400;
     color: #FFFFFF99;
+}
+
+.academic_education {
+    width: 622px;
+    height: 127px;
+    border-radius: 16px;
+    background-color: #1B2226;
+    color: #FFFFFFE5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.positioning_academic_background {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.positioning_academic_background h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.positioning_teaching {
+    display: flex;
+    width: 36%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.positioning_teaching h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.positioning_teaching p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.positioning_teaching span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF99;
+}
+
+
+.languages {
+    width: 622px;
+    height: 178px;
+    border-radius: 16px;
+    background-color: #1B2226;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.positioning_languages {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.positioning_languages h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFFE5;
+}
+
+.portuguese,
+.english {
+    display: flex;
+    flex-direction: column;
+}
+
+.portuguese span,
+.english span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.portuguese p,
+.english p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400; text-align: left;
+    color: #FFFFFF99;
+}
+
+#horizontal_line {
+    width: 100%;
+    border-bottom: 1px solid #FFFFFF99;
 }
