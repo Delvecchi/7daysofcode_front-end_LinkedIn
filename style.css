@@ -4,17 +4,23 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    height: 2100px;
+}
+
 header {
+
     width: 100%;
     height: 38px;
     display: flex;
     background-color: rgb(27, 34, 38);
     justify-content: flex-start;
-    padding-left: 3%;
 }
 
 .header {
-    width: 90%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -118,26 +124,47 @@ header {
 main {
     background-color: #000000;
     width: 100%;
-    height: 2000px;
-    padding-top: 2%;
-    padding-left: 11.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main_positioning {
+    display: flex;
+    align-items: center;
+    height: 98%;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.main_content {
+    display: flex;
+    height: 97%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.main_content_position {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .profile_information {
     background-color: #1B2226;
     width: 622px;
-    height: 468px;
+    height: 21%;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+    align-items: center;
 }
 
 .cover_image {
     width: 100%;
-    height: 50%;
+    height: 46%;
 }
 
 .cover_image img {
@@ -146,86 +173,94 @@ main {
 }
 
 .profile_picture {
-    position: fixed;
-    top: 30%;
-    left: 13%;
+    top: -45%;
+    position: relative;
+    left: -28.9%;
+    width: 35%;
+    height: 40%;
 }
 
 .profile_picture img {
-    width: 82%;
-    height: 82%;
+    width: 55%;
+    height: 100%;
 }
 
 .personal_information {
     display: flex;
-    width: 87%;
+    width: flex;
+    width: 93%;
     height: 50%;
-    margin-left: 4%;
+    position: relative;
+    top: 13%;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-
 }
 
 .informations {
     height: 100%;
     display: flex;
     color: #FFFFFFE5;
+    justify-content: space-evenly;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .name_profession {
     display: flex;
-    height: 26%;
+    /* border: 1px solid red; */
+    height: 45%;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .name_profession h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .name_profession h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600;
 }
 
 .name_profession p {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
+    color: #FFFFFF99;
 }
 
 .city_contact {
-    width: 80%;
+    width: 84%;
+    /* border: 1px solid chartreuse; */
     height: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .city_contact span {
     display: flex;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
+    color: #FFFFFF99;
 }
 
 .city_contact p {
     color: #70B5F9;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
 }
 
 .interactions {
-    width: 51%;
+    width: 55%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -234,7 +269,7 @@ main {
 .interactions p {
     color: #70B5F9;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
 }
 
@@ -245,15 +280,15 @@ main {
 
 .profile_actions {
     display: flex;
-    width: 263px;
-    height: 18%;
+    width: 74%;
+    height: 20%;
     justify-content: space-between;
     align-items: center;
 }
 
 .message {
     width: 128px;
-    height: 32px;
+    height: 100%;
     background-color: #70B5F9;
     border-radius: 16px;
     display: flex;
@@ -263,11 +298,13 @@ main {
 
 .message span {
     color: #000000BF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
 }
 
 .more {
     width: 128px;
-    height: 32px;
+    height: 100%;
     border: 1px solid #70B5F9;
     border-radius: 16px;
     display: flex;
@@ -277,6 +314,8 @@ main {
 
 .more span {
     color: #70B5F9;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .career_details {
@@ -291,18 +330,32 @@ main {
 .company {
     display: flex;
     align-items: center;
+
     margin-bottom: 3%;
+    width: 50%;
+    justify-content: space-between;
 }
 
 .educational_institution {
     display: flex;
+
+    width: 83%;
     align-items: center;
+    justify-content: space-between;
+}
+
+.company span,
+.educational_institution span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #FFFFFFE5;
 }
 
 .highlights {
     background-color: #1B2226;
     width: 622px;
-    height: 300px;
+    height: 13%;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -310,11 +363,11 @@ main {
     justify-content: space-evenly;
 }
 
-.highlights_span {
+.highlight {
     color: #FFFFFFE5;
     width: 92%;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -327,8 +380,8 @@ main {
 .component_list {
     display: flex;
     border: 1px solid #FFFFFF99;
-    width: 180px;
-    height: 236px;
+    width: 30%;
+    height: 100%;
     border-radius: 6px;
     flex-direction: column;
     justify-content: space-evenly;
@@ -370,8 +423,19 @@ main {
     align-items: center;
 }
 
+.number_reactions span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFFFFF99;
+}
+
 .positioning_activities {
-    height: 90%;
+    height: 95%;
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .activities {
@@ -379,16 +443,15 @@ main {
     background-color: #1B2226;
     border-radius: 6px;
     width: 622px;
-    height: 320px;
+    height: 22%;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 2% 0;
 }
 
 .followers_activities {
     display: flex;
-    width: 90%;
+    width: 100%;
     height: 15%;
     flex-direction: column;
     justify-content: space-evenly;
@@ -397,14 +460,14 @@ main {
 .followers_activities p {
     color: #FFFFFFE5;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .followers_activities span {
     color: #70B5F9;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 500;
 }
 
@@ -414,25 +477,39 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .publication_date {
     display: flex;
-    width: 90%;
+    width: 97%;
     color: #FFFFFF99;
     justify-content: flex-start;
     align-items: center;
 }
 
+.placement_date_publication {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
 .data_publicação_elementos {
     display: flex;
     align-items: center;
+
+}
+
+.data_publicação_elementos p {
+    color: #FFFFFF99;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .publication_activity {
     display: flex;
-    width: 90%;
+    width: 98%;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -444,11 +521,19 @@ main {
 
 .activity_post_description {
     color: #FFFFFF;
-    width: 100%;
+    display: flex;
+    width: 87%;
     height: 64px;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.activity_post_description p {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 10.5px;
     font-weight: 400;
+    color: #FFFFFF;
 }
 
 .activity_post_interactions {
@@ -457,6 +542,14 @@ main {
     display: flex;
     justify-content: space-between;
 }
+
+.activity_post_interactions span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFFFFF99;
+}
+
 
 #center_line {
     width: 90%;
@@ -473,7 +566,7 @@ main {
     width: 90%;
     height: 5%;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
     display: flex;
     text-align: center;
@@ -486,7 +579,7 @@ main {
 .about {
     display: flex;
     width: 622px;
-    height: 134px;
+    height: 6%;
     background-color: #1B2226;
     border-radius: 16px;
     color: #FFFFFFE5;
@@ -509,13 +602,13 @@ main {
     font-weight: 400;
     flex-direction: column;
     align-items: stretch;
-    height: 40%;
+    height: 50%;
     justify-content: space-around;
 }
 
 .about span {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -523,7 +616,7 @@ main {
     display: flex;
     background-color: #1B2226;
     width: 622px;
-    height: 358px;
+    height: 19%;
     border-radius: 16px;
     flex-direction: column;
     align-items: center;
@@ -540,7 +633,7 @@ main {
 
 .experiences h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: #FFFFFFE5;
     margin-bottom: 2%;
@@ -606,14 +699,14 @@ main {
 
 .experience_texts h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     color: #FFFFFFE5;
 }
 
 .experience_texts p {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     color: #FFFFFFE5;
 }
@@ -627,7 +720,7 @@ main {
 
 .academic_education {
     width: 622px;
-    height: 127px;
+    height: 7%;
     border-radius: 16px;
     background-color: #1B2226;
     color: #FFFFFFE5;
@@ -647,7 +740,7 @@ main {
 
 .positioning_academic_background h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -681,7 +774,7 @@ main {
 
 .languages {
     width: 622px;
-    height: 178px;
+    height: 8%;
     border-radius: 16px;
     background-color: #1B2226;
     display: flex;
@@ -699,7 +792,7 @@ main {
 
 .positioning_languages h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #FFFFFFE5;
 }
@@ -722,11 +815,120 @@ main {
 .english p {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    font-weight: 400; text-align: left;
+    font-weight: 400;
+    text-align: left;
     color: #FFFFFF99;
 }
 
 #horizontal_line {
     width: 100%;
     border-bottom: 1px solid #FFFFFF99;
+}
+
+aside {
+    display: flex;
+    /* margin-left: 3%; */
+    /* border: 1px solid blue; */
+    width: 25%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFFE5;
+}
+
+.side_card {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    background-color: #1B2226;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 4%;
+}
+
+.side_card_placement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.visualized {
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+}
+
+.person {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.person_positioning {
+    display: flex;
+}
+
+.photo_person img {
+    width: 90%;
+}
+
+.card_info h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.card_info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    color: #FFFFFF99;
+}
+
+.send_message {
+    display: flex;
+    width: 65%;
+    height: 30%;
+    border: 1px solid #FFFFFFE5;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.send_message_conectar {
+    display: flex;
+    width: 40%;
+    height: 30%;
+    border: 1px solid #FFFFFFE5;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.send_message a,
+.send_message_conectar a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.send_message a span,
+.send_message_conectar a span {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #FFFFFF;
 }
